@@ -7,9 +7,9 @@ const server = http.createServer((req, res) => {
   //console.log(urlPath);
 
   if (urlPath === "/" || urlPath === "/overview") {
-    res.end("This is the OVERVIEW...");
+    res.end("This is the OVERVIEW PAGE...");
   } else if (urlPath === "/product") {
-    res.end("This is the PRODUCT...");
+    res.end("This is the PRODUCT PAGE...");
   } else {
     res.writeHead(404, {
       "content-type": "text/html",
